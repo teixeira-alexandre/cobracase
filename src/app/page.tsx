@@ -76,6 +76,10 @@ export default function Home() {
           </div>
         </MaxWidthWrapper>
       </section>
+      {/* value proposition section */}
+      <section className="bg-slate-100 py-24">
+
+      </section>
     </div>
   );
 }
