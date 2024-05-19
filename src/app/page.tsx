@@ -1,3 +1,4 @@
+import { Icons } from "@/components/Icons";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Phone from "@/components/Phone";
 import { Check, Star } from "lucide-react";
@@ -44,11 +45,31 @@ export default function Home() {
               </ul>
               <div className="mt-12 flex flex-col sm:flex-row items-center sm:items-start gap-5">
                 <div className="flex -space-x-4">
-                  <img className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100" src="/users/user-1.png" alt="user image" />
-                  <img className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100" src="/users/user-2.png" alt="user image" />
-                  <img className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100" src="/users/user-3.png" alt="user image" />
-                  <img className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100" src="/users/user-4.jpg" alt="user image" />
-                  <img className="inline-block h-10 w-10 object-cover rounded-full ring-2 ring-slate-100" src="/users/user-5.jpg" alt="user image" />
+                  <img
+                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
+                    src="/users/user-1.png"
+                    alt="user image"
+                  />
+                  <img
+                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
+                    src="/users/user-2.png"
+                    alt="user image"
+                  />
+                  <img
+                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
+                    src="/users/user-3.png"
+                    alt="user image"
+                  />
+                  <img
+                    className="inline-block h-10 w-10 rounded-full ring-2 ring-slate-100"
+                    src="/users/user-4.jpg"
+                    alt="user image"
+                  />
+                  <img
+                    className="inline-block h-10 w-10 object-cover rounded-full ring-2 ring-slate-100"
+                    src="/users/user-5.jpg"
+                    alt="user image"
+                  />
                 </div>
                 <div className="flex flex-col justify-between items-center sm:items-start">
                   <div className="flex gap-0.5">
@@ -69,8 +90,16 @@ export default function Home() {
 
           <div className="col-span-full lg:col-span-1 w-full flex justify-center px-8 sm:px-16 md:px0 mt-32 lg:mx-0 lg:mt-20 h-fit">
             <div className="relative md: max-w-xl">
-              <img src="/your-image.png" className="absolute w-40 lg:w-52 left-56 -top-20 select-none hidden sm:block lg:hidden xl:block" alt="/" />
-              <img src="/line.png" className="absolute w-20 -left-6 -bottom-6 select-none" alt="/" />
+              <img
+                src="/your-image.png"
+                className="absolute w-40 lg:w-52 left-56 -top-20 select-none hidden sm:block lg:hidden xl:block"
+                alt="/"
+              />
+              <img
+                src="/line.png"
+                className="absolute w-20 -left-6 -bottom-6 select-none"
+                alt="/"
+              />
               <Phone className="w-64" imgSrc="/testimonials/1.jpg" />
             </div>
           </div>
@@ -78,7 +107,52 @@ export default function Home() {
       </section>
       {/* value proposition section */}
       <section className="bg-slate-100 py-24">
+        <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-32">
+          <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6">
+            <h2 className="order-1 mt-2 tracking-tight text-center text-balance !leading-tight font-bold text-5xl md:text-6xl text-gray-900 relative">
+              What our{" "}
+              <span className="relative px-2 ">
+                customers{" "}
+                <Icons.underline className="hidden sm:block pointer-events-none absolute inset-x-0 -bottom-6 text-green-500" />
+              </span>{" "}
+              say
+            </h2>
+            <img
+              src="/snake-2.png"
+              alt="/"
+              className="w-24 order-0 lg:oder-2"
+            />
+          </div>
+          <div className="mx-auto grid max-w-2xl grid-cols-1 px-4 lg:mx-0 lg:max-w-none lg:grid-cols-2 gap-y-16">
+            <div className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
+              <div className="flex gap-0.5 mb-2">
+                <Star className="h-5 w-5 text-green-600 fill-green-600" />
+                <Star className="h-5 w-5 text-green-600 fill-green-600" />
+                <Star className="h-5 w-5 text-green-600 fill-green-600" />
+                <Star className="h-5 w-5 text-green-600 fill-green-600" />
+                <Star className="h-5 w-5 text-green-600 fill-green-600" />
+              </div>
+              <div className="text-lg leading-8">
+                <p>
+                &quot;The case is amazing! The quality is top-notch and the <span className="p-0.5 bg-slate-800 text-white">print is very detailed</span>. I love it!&quot;
+                </p>
 
+              </div>
+              <div className="flex gap-4 mt-2">
+                <img src="/users/user-1.png" alt="user image" className="rounded-full h-12 w-12 object-contain" />
+                <div className="flex flex-col">
+                  <p className="font-semibold">
+                    James
+                  </p>
+                  <div className="flex gap-1.5 items-center text-zinc-600">
+                    <Check className="h-4 w-4 strike-[3px] text-green-600"/>
+                    <p className="texxt-sm">Verified purchase</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </MaxWidthWrapper>
       </section>
     </div>
   );
