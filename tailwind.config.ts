@@ -53,6 +53,19 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "rosinha": {
+          50: "#FDEDEF",
+          100: "#FBDBE0",
+          200: "#F7BBC5",
+          300: "#F297A6",
+          400: "#EE778B",
+          500: "#EA546C",
+          600: "#E31C3D",
+          700: "#A8152D",
+          800: "#720E1F",
+          900: "#36070F",
+          950: "#1B0307"
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
