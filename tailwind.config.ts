@@ -53,7 +53,7 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "rosinha": {
+        "pink": {
           50: "#FDEDEF",
           100: "#FBDBE0",
           200: "#F7BBC5",

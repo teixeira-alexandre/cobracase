@@ -6,7 +6,7 @@ interface PhoneProps extends HTMLAttributes<HTMLDivElement> {
   dark?: boolean;
 }
 
-const Phone = ({ imgSrc, dark, className = false, ...props }: PhoneProps) => {
+const Phone = ({ imgSrc, dark, className = "false", ...props }: PhoneProps) => {
   return (
     <div
       className={cn(
@@ -28,7 +28,7 @@ const Phone = ({ imgSrc, dark, className = false, ...props }: PhoneProps) => {
         <img
           src={imgSrc}
           alt="overlaying phone image"
-          className="object-cover"
+          className="object-cover min-w-full min-h-full"
         />
       </div>
     </div>
