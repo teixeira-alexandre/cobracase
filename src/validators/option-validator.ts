@@ -1,5 +1,5 @@
 // bg-blue-950 border-blue-950
-// bg-zinc-950 border-zinc-900
+// bg-zinc-900 border-zinc-900
 // bg-rose-950 border-rose-950
 // bg-green-950 border-green-950
 // bg-pink-300 border-pink-300
